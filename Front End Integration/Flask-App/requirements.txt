@@ -1,0 +1,7 @@
+Flask
+pickle
+numpy
+pandas
+scikit-learn
+tensorflow
+openpyxl
