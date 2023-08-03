@@ -5,7 +5,7 @@ RUN apt-get install python3-pip -y
 RUN apt-get install gunicorn3 -y
 
 COPY requirements.txt requirements.txt
-COPY flask-app /opt/
+COPY Flask-App /opt/
 
 RUN pip3 install -r requirements.txt
 WORKDIR /opt/
