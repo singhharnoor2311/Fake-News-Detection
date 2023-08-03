@@ -2,6 +2,7 @@ version: '3'
 
 services:
   Flask-App:
+    image: flask_app:latest
     build: ./Flask-App
     ports:
      - "8000:8000"
