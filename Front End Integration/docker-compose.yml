@@ -1,8 +1,9 @@
 version: '3'
 
 services:
-  flask_app:
-    build: ./flask-app
+  Flask-App:
+    image: imageName
+    build: ./Flask-App
     ports:
      - "8000:8000"
     network_mode: host
