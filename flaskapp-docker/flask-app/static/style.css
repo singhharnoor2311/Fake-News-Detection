@@ -17,7 +17,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-loading-spinner {
+#loading-spinner {
   position: fixed;
   z-index: 9999;
   top: 50%;
@@ -26,7 +26,7 @@ loading-spinner {
   text-align: center;
 }
 
-loading-spinner img {
+#loading-spinner img {
   animation: spin 1s linear infinite;
 }
 
@@ -163,13 +163,13 @@ button {
   text-align: center;
 }
 
-analyze-btn {
+#analyze-btn {
   background-color: #009dff;
   color: white;
   padding: 0.6rem;
 }
 
-analyze-btn.dark-theme {
+#analyze-btn.dark-theme {
   background-color: #002f4a;
 }
 
@@ -177,11 +177,11 @@ analyze-btn.dark-theme {
   background-color: #0092ed;
 }
 
-analyze-btn.dark-theme:hover {
+#analyze-btn.dark-theme:hover {
   background-color: #00253a;
 }
 
-result-container {
+#result-container {
   margin-top: 20px;
   text-align: center;
   color: white;
