@@ -1,6 +1,6 @@
-tensorflow
 Flask
 numpy
 pandas
 scikit-learn
 openpyxl
+tensorflow

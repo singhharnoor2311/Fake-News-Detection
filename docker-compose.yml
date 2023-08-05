@@ -4,5 +4,9 @@ services:
   flask-app:
     build: ./flaskapp-docker
     ports: 
-      - "8000:8000"
-    network_mode: host
+      - "80:8000"
+    networks:
+      - flasknet
+
+networks:
+  flasknet:
