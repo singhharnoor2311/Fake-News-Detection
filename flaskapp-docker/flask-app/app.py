@@ -26,7 +26,7 @@ tokenizer.fit_on_texts(train_texts)
 train_sequences = tokenizer.texts_to_sequences(train_texts)
 max_sequence_length = max(len(seq) for seq in train_sequences)
 
-model = load_model("test_model.h5")
+model = load_model("CNN_Model.h5")
 
 # Predicting Function
 def sentiment_analysis(news: str):
