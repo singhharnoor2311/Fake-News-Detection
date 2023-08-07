@@ -42,8 +42,8 @@ def sentiment_analysis(news: str):
     prediction = model.predict(final_text) 
 
     result = (prediction> THRESHOLD).astype(int) 
-
-    print(f"Final Prediction: {result[0][0]}")
+    print("\n\n")
+    print(f"Result : {result} and {result[0][0]}")
 
     return result
 
@@ -58,15 +58,14 @@ def prediction():
     if request.method == "POST":
         # Get the news
         news = request.form["news"]
-        print("Statement -> ",news)
 
         # Predicting result
         result = sentiment_analysis(news)
 
         if result == 1:
-            result = "The news is True"
+            result = "True"
         else:
-            result = "The news is False"
+            result = "False"
 
         return render_template("index.html", prediction_text="{}".format(result))
 

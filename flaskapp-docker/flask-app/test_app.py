@@ -9,9 +9,9 @@ class TestFlaskApp(unittest.TestCase):
         self.app.testing = True
 
     # Test if the home page loads successfully
-    # def test_home_page(self):
-    #     response = self.app.get('/')
-    #     self.assertEqual(response.status_code, 200)
+    def test_home_page(self):
+        response = self.app.get('/')
+        self.assertEqual(response.status_code, 200)
 
     # Test prediction with positive news
     def test_positive_prediction(self):
